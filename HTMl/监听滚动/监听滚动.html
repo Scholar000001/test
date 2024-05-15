@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>监听滚动</title>
+	</head>
+	<body>
+		<div class="item">
+			月亮的散文 篇1
+			你是地球上独具的一颗天然卫星，你历经着月相的周而复始在有序的驰骋，你印证着光阴的弥久与岁月的飘零，你忠贞不渝围绕着地球持之以恒。从遥远的亘古到讫今的时空，从漫长的黑夜到璀璨的黎明……
+			你高奏着百星不如一月的不老浩歌，你时刻吸纳着太阳的无尽光泽。俨然，就是黑夜也将折射的清辉照彻苍穹。你堪称是地球最至真的弟兄，你与地球肝胆相照、无与伦比的赤诚。你默默地、朴实地守望浩瀚的古老夜空。
+			你不仅具有鬼斧神工，呼唤江的潮汐、海的奔腾。你更勃发魅力无穷，播洒银的清辉、雪的意境。你承载月老的使命，为恋侣留下悠悠倩影。你宛如夜晚的精灵，为夜幕演绎壮美的风景。
+			花好月圆你寓意着景致的唯美，闭月羞花你涟漪着腼腆的姿容。风花雪月你诠释着四季的风采，冰壶秋月你彰显着心灵的纯净。
+			古往的文人诗圣无不对你抒怀吟咏，我感怀“片云天共远，永夜月同孤”的妙曼意境，我欣赏“明月松间照，清泉石上流”的绝妙佳景；我赞美“野旷天低树，江清月近人”的精美佳句，我震撼“月皎疑非夜，林疏似更秋”的妙笔横生……
+			我曾每每为嫦娥奔月的美丽传说而遐想寒宫，我也常常为吴刚伐树的传奇故事而凝眸夜空，我更为中国航天实现登月的梦想而骄傲陡升。
+			你渴望人类步入你的仙境，你希冀人类探索你的奥秘。你向往生命的火种在自己的躯体点燃，你坚信人类征服月球不在是遥远的憧憬。
+			星移斗转，你昭然着天体内在的运行。圆缺变幻，你浪漫着多姿的丽景。正月十五，你缤纷着闹元宵的祥和喜庆，中秋佳节，你内涵着思故乡的遥念亲情。
+			你清辉皎洁，凌空高悬，繁星炫丽着你体态的娉婷。你流光柔美，神韵晶莹，夜幕衬托着你富有诗意的魂灵。你轮回更替，月旦春秋，在生命的轨迹上绽放着多姿的月华。你月挂星汉，清光万缕，在空宇上寄托着天各一方、月共一轮的思情。
+			也许，人们只欣赏日的火红，而忽略月的朦胧。抑或，人们只关注耀眼的黎明，而忘却夜色的意境。
+			然而，你无怨人们的淡然，在寂静的夜晚里温馨的守望着人们的梦境。你不畏世俗的偏见，在繁星的天宇上无憾的将最柔美的华辉倾洒永恒……
+		</div>
+	</body>
+	<script>
+		const item = document.querySelector(".item");
+		// 防抖动函数
+    //原理--利用延时器在用户动作停止后一定时间再执行函数，如果一定时间内多次执行则把上次的清除
+		function debounce(fn, delay) {
+			let timer = null;
+			return () => {
+				clearTimeout(timer);
+				timer = setTimeout(() => {
+					fn();
+				}, delay);
+			};
+		}
+		
+		const ifBottom = function() {
+			console.log("滚动了");
+			//顶部滚动距离
+			let scrollTop = item.scrollTop;
+			//可视区域高度
+			let clientHeight = item.clientHeight;
+			//内容的高度
+			let scrollHeight = item.scrollHeight;
+			if (scrollTop + clientHeight >= scrollHeight) {
+				console.log("到底了");
+			}
+		}
+		/**
+		 * 函数节流,时间戳，先执行
+		*/
+		function throttle(fn,delay){
+			let oldTime = Date.now();
+			return ()=>{
+				let newTiem = Date.now();
+				if(newTiem - oldTime >=delay){
+					fn();
+					oldTime = Date.now();
+				} 
+			}
+		}
+		/**
+		 * 函数节流,定时器,后执行
+		*/
+		function throttle2(fn,delay){
+			let timer = null;
+			return ()=>{
+				if(!timer){
+					timer = setTimeout(()=>{
+						fn();
+						timer = null;
+					},delay);
+				}
+			}
+		}
+		var myEfficientFn = debounce(ifBottom, 250);//防抖动
+		var mythrottleFn = throttle(ifBottom,2500)//节流,时间戳
+		var mythrottleFn2 = throttle2(ifBottom,2500)//节流,定时器
+
+		// item.addEventListener("scroll", myEfficientFn);
+		item.addEventListener("scroll", mythrottleFn);
+		// item.addEventListener("scroll", ifBottom);
+		// item.addEventListener("scroll", mythrottleFn2);
+	</script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.item {
+			line-height: 30px;
+			width: 50%;
+			height: 50vh;
+			margin: 0 auto;
+			background-color: red;
+			/* 超出隐藏，允许滚动 */
+			overflow: hidden;
+			/* 滚动条样式 */
+			overflow-y: scroll;
+		}
+	</style>
+</html>

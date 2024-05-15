@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>多选</title>
+	</head>
+	<body>
+		<div id="checkbox">
+			选择：
+			<input type="checkbox" name="all" id="all" />全部
+			<input type="checkbox" value="sleep" name="hobby" />睡觉
+			<input type="checkbox" value="eat" name="hobby" />吃饭
+			<input type="checkbox" value="play" name="hobby" />玩耍
+			<input type="checkbox" value="read" name="hobby" />阅读
+			<input type="checkbox" value="write" name="hobby" />写作
+		</div>
+	</body>
+	<script>
+		const checkbox = document.getElementById("checkbox");
+		const value = document.getElementsByName("hobby");
+		const all = document.getElementById("all");
+		all.addEventListener("click", allCheck);
+		for (let i = 0; i < value.length; i++) {
+			value[i].addEventListener("click", ifAll);
+		}
+		// 全选
+		function allCheck() {
+			if (all.checked) {
+				for (let i = 0; i < value.length; i++) {
+					value[i].checked = true;
+				}
+			}
+			if (!all.checked) {
+				for (let i = 0; i < value.length; i++) {
+					value[i].checked = false;
+				}
+			}
+		}
+		//判断是否全选
+		function ifAll() {
+			for (let i = 0; i < value.length; i++) {
+				if (!value[i].checked) {
+					all.checked = false;
+					return;
+				}
+				all.checked = true;
+			}
+		}
+	</script>
+</html>

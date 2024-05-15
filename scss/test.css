@@ -1,0 +1,110 @@
+@keyframes moveUp {
+  to {
+    transform: translateY(-100vh);
+  }
+}
+.starrySky {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.starrySky1 {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 73vw 85vh white,48vw 18vh white,91vw 43vh white,51vw 75vh white,16vw 10vh white,30vw 40vh white,20vw 60vh white,52vw 76vh white,56vw 13vh white,18vw 82vh white,99vw 58vh white,63vw 92vh white,34vw 24vh white,40vw 84vh white,22vw 88vh white,7vw 49vh white,69vw 18vh white,7vw 45vh white,45vw 76vh white,86vw 20vh white,32vw 79vh white,56vw 72vh white,20vw 59vh white,4vw 34vh white,16vw 73vh white,85vw 99vh white,65vw 44vh white,52vw 34vh white,92vw 14vh white,89vw 67vh white,82vw 14vh white,43vw 31vh white,77vw 49vh white,51vw 60vh white,40vw 85vh white,84vw 70vh white,95vw 56vh white,86vw 100vh white,54vw 15vh white,27vw 87vh white,80vw 5vh white,32vw 97vh white,74vw 75vh white,18vw 47vh white,71vw 7vh white,66vw 25vh white,83vw 6vh white,75vw 90vh white,59vw 86vh white,28vw 76vh white,100vw 60vh white,16vw 76vh white,24vw 71vh white,11vw 54vh white,47vw 84vh white,56vw 30vh white,59vw 83vh white,46vw 62vh white,25vw 32vh white,20vw 3vh white,33vw 89vh white,92vw 91vh white,98vw 47vh white,50vw 43vh white,64vw 63vh white,40vw 17vh white,81vw 68vh white,84vw 74vh white,75vw 84vh white,74vw 48vh white,87vw 69vh white,24vw 81vh white,5vw 71vh white,92vw 43vh white,23vw 81vh white,61vw 47vh white,73vw 57vh white,99vw 50vh white,20vw 15vh white,28vw 15vh white,29vw 12vh white,80vw 44vh white,65vw 77vh white,74vw 6vh white,28vw 79vh white,90vw 50vh white,87vw 78vh white,28vw 91vh white,25vw 15vh white,88vw 42vh white,69vw 8vh white,70vw 59vh white,55vw 46vh white,98vw 79vh white,69vw 35vh white,20vw 81vh white,61vw 55vh white,71vw 3vh white,63vw 17vh white,97vw 77vh white,95vw 58vh white,78vw 60vh white,52vw 91vh white,72vw 13vh white,23vw 87vh white,76vw 12vh white,6vw 58vh white,1vw 17vh white,47vw 99vh white,25vw 86vh white,87vw 84vh white,35vw 93vh white,4vw 99vh white,23vw 6vh white,21vw 98vh white,58vw 52vh white,48vw 12vh white,75vw 95vh white,26vw 25vh white,69vw 89vh white,57vw 57vh white,31vw 96vh white,37vw 23vh white,88vw 32vh white,38vw 63vh white,7vw 70vh white,49vw 46vh white,45vw 13vh white,98vw 55vh white,71vw 94vh white,20vw 85vh white,27vw 74vh white,72vw 73vh white,93vw 32vh white,79vw 8vh white,83vw 63vh white,59vw 24vh white,74vw 34vh white,79vw 30vh white,68vw 56vh white,76vw 39vh white,2vw 71vh white,90vw 70vh white,4vw 36vh white,20vw 18vh white,81vw 20vh white,25vw 31vh white,4vw 15vh white,94vw 56vh white,19vw 46vh white,96vw 54vh white,28vw 95vh white,74vw 47vh white,82vw 45vh white,16vw 59vh white,61vw 38vh white,46vw 86vh white,45vw 26vh white,11vw 86vh white,90vw 57vh white,91vw 97vh white,90vw 9vh white,95vw 76vh white,90vw 40vh white,54vw 61vh white,34vw 28vh white,25vw 61vh white,60vw 62vh white,99vw 43vh white,58vw 58vh white,17vw 20vh white,28vw 77vh white,79vw 96vh white,41vw 9vh white,4vw 37vh white,58vw 17vh white,100vw 60vh white,58vw 44vh white,32vw 2vh white,50vw 74vh white,85vw 22vh white,91vw 9vh white,28vw 8vh white,47vw 20vh white,29vw 94vh white,78vw 66vh white,49vw 95vh white,28vw 63vh white,17vw 71vh white,22vw 47vh white,71vw 60vh white,11vw 99vh white,82vw 71vh white,88vw 65vh white,74vw 41vh white,25vw 51vh white,28vw 91vh white,89vw 5vh white,70vw 21vh white,79vw 61vh white,69vw 89vh white,74vw 94vh white,79vw 68vh white,44vw 85vh white,74vw 36vh white,2vw 20vh white,86vw 36vh white,23vw 35vh white,44vw 47vh white,83vw 89vh white,86vw 15vh white,49vw 14vh white,79vw 55vh white,11vw 34vh white,69vw 72vh white,96vw 48vh white,80vw 2vh white,43vw 26vh white,92vw 88vh white,68vw 34vh white,20vw 4vh white,4vw 33vh white,39vw 23vh white,61vw 100vh white,3vw 63vh white,21vw 8vh white,82vw 5vh white,42vw 49vh white,38vw 17vh white,85vw 49vh white,44vw 71vh white,88vw 91vh white,10vw 46vh white,5vw 64vh white,68vw 40vh white,36vw 10vh white,68vw 11vh white,87vw 25vh white,36vw 26vh white,26vw 79vh white,26vw 43vh white,5vw 64vh white,10vw 11vh white,20vw 65vh white,86vw 54vh white,49vw 64vh white,47vw 93vh white,21vw 47vh white,57vw 39vh white,2vw 88vh white,66vw 7vh white,49vw 68vh white,70vw 23vh white,58vw 82vh white,55vw 69vh white,10vw 91vh white,100vw 74vh white,93vw 83vh white,73vw 93vh white,82vw 23vh white,69vw 82vh white,95vw 35vh white,32vw 77vh white,90vw 30vh white,62vw 60vh white,89vw 49vh white,14vw 63vh white,41vw 56vh white,14vw 82vh white,38vw 6vh white,98vw 40vh white,61vw 98vh white,94vw 82vh white,37vw 91vh white,97vw 1vh white,13vw 31vh white,82vw 67vh white,95vw 68vh white,83vw 79vh white,46vw 98vh white,92vw 26vh white,33vw 4vh white,85vw 15vh white,17vw 60vh white,81vw 42vh white,70vw 55vh white,14vw 50vh white,55vw 34vh white,100vw 8vh white,17vw 82vh white,71vw 67vh white,67vw 50vh white,45vw 59vh white,73vw 64vh white,100vw 5vh white,49vw 68vh white,86vw 44vh white,8vw 100vh white,47vw 93vh white,74vw 38vh white,34vw 18vh white,87vw 27vh white,29vw 81vh white,74vw 50vh white,81vw 76vh white,18vw 36vh white,8vw 29vh white,70vw 74vh white,38vw 19vh white,84vw 63vh white,63vw 8vh white,60vw 87vh white,80vw 47vh white,22vw 9vh white,45vw 41vh white,91vw 9vh white,3vw 2vh white,26vw 34vh white,65vw 19vh white,29vw 73vh white,17vw 66vh white,9vw 82vh white,60vw 69vh white,8vw 13vh white,49vw 3vh white,78vw 2vh white,20vw 36vh white,32vw 97vh white,86vw 67vh white,76vw 90vh white,61vw 34vh white,79vw 7vh white,66vw 62vh white,64vw 2vh white,93vw 54vh white,90vw 11vh white,52vw 92vh white,66vw 61vh white,50vw 96vh white,14vw 34vh white,97vw 88vh white,20vw 1vh white,24vw 91vh white,40vw 89vh white,63vw 91vh white,45vw 8vh white,36vw 18vh white,72vw 44vh white,2vw 21vh white,76vw 73vh white,97vw 37vh white,32vw 10vh white,49vw 90vh white,18vw 85vh white,97vw 34vh white,3vw 30vh white,22vw 62vh white,69vw 82vh white,97vw 7vh white,49vw 90vh white,35vw 93vh white,46vw 14vh white,6vw 68vh white,73vw 41vh white,38vw 55vh white,45vw 11vh white,12vw 13vh white,57vw 16vh white,99vw 40vh white,21vw 43vh white,93vw 27vh white,71vw 54vh white,61vw 85vh white,2vw 77vh white,75vw 74vh white,65vw 56vh white,16vw 37vh white,42vw 4vh white,69vw 61vh white,16vw 58vh white,54vw 50vh white,91vw 66vh white,58vw 22vh white,46vw 55vh white,61vw 12vh white,74vw 1vh white,58vw 60vh white,67vw 72vh white,30vw 54vh white,46vw 11vh white,82vw 39vh white,66vw 15vh white,98vw 91vh white,23vw 89vh white,76vw 95vh white,85vw 47vh white,85vw 65vh white,91vw 68vh white,93vw 27vh white,61vw 32vh white,70vw 34vh white,62vw 18vh white,74vw 3vh white,73vw 95vh white,74vw 66vh white,50vw 99vh white,13vw 94vh white,59vw 85vh white,1vw 19vh white,69vw 72vh white,18vw 60vh white,3vw 15vh white,85vw 28vh white,21vw 91vh white,46vw 39vh white,7vw 12vh white,64vw 92vh white,22vw 36vh white,77vw 81vh white,33vw 86vh white,23vw 20vh white,62vw 61vh white,78vw 39vh white,42vw 96vh white,87vw 6vh white,100vw 69vh white,32vw 71vh white,22vw 65vh white,20vw 100vh white,42vw 92vh white,71vw 25vh white,25vw 51vh white,30vw 89vh white,11vw 43vh white,77vw 52vh white,70vw 49vh white,72vw 31vh white,74vw 23vh white,85vw 30vh white,50vw 16vh white,60vw 64vh white,52vw 41vh white,27vw 18vh white,59vw 3vh white,52vw 16vh white,2vw 10vh white,51vw 66vh white,84vw 29vh white,83vw 10vh white,7vw 46vh white,83vw 76vh white,36vw 8vh white,20vw 41vh white,17vw 94vh white,85vw 53vh white,97vw 96vh white,43vw 56vh white,47vw 55vh white,43vw 61vh white,67vw 36vh white,1vw 91vh white,46vw 89vh white,76vw 3vh white,46vw 3vh white,3vw 37vh white,31vw 14vh white,53vw 34vh white,79vw 80vh white,76vw 80vh white,9vw 8vh white,3vw 21vh white,2vw 2vh white,91vw 97vh white,52vw 35vh white,16vw 9vh white,56vw 11vh white,40vw 22vh white,31vw 97vh white,39vw 67vh white,80vw 75vh white,93vw 22vh white,16vw 15vh white,87vw 70vh white,86vw 100vh white,32vw 47vh white,24vw 26vh white,30vw 42vh white,36vw 43vh white,8vw 4vh white,45vw 19vh white,9vw 92vh white,87vw 44vh white,92vw 20vh white,40vw 53vh white,25vw 97vh white,91vw 79vh white,61vw 13vh white,10vw 89vh white,84vw 8vh white,87vw 7vh white;
+  animation: moveUp 200s linear infinite;
+}
+.starrySky1::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: fixed;
+  left: 0;
+  top: 100vh;
+  box-shadow: inherit;
+}
+
+.starrySky2 {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 41vw 70vh white,31vw 4vh white,91vw 20vh white,82vw 71vh white,92vw 36vh white,29vw 26vh white,19vw 89vh white,76vw 89vh white,23vw 11vh white,62vw 64vh white,27vw 7vh white,51vw 2vh white,81vw 33vh white,1vw 58vh white,48vw 66vh white,83vw 21vh white,57vw 44vh white,14vw 63vh white,93vw 76vh white,87vw 4vh white,93vw 79vh white,3vw 78vh white,11vw 99vh white,49vw 71vh white,48vw 73vh white,36vw 73vh white,83vw 58vh white,52vw 16vh white,56vw 68vh white,51vw 53vh white,94vw 15vh white,7vw 14vh white,15vw 64vh white,21vw 44vh white,78vw 98vh white,27vw 50vh white,39vw 21vh white,49vw 58vh white,40vw 74vh white,71vw 5vh white,17vw 86vh white,70vw 84vh white,100vw 5vh white,8vw 83vh white,63vw 59vh white,66vw 34vh white,32vw 14vh white,17vw 39vh white,95vw 35vh white,80vw 21vh white,27vw 72vh white,58vw 29vh white,92vw 43vh white,19vw 38vh white,48vw 35vh white,6vw 61vh white,78vw 22vh white,68vw 47vh white,10vw 19vh white,43vw 10vh white,18vw 58vh white,29vw 89vh white,59vw 93vh white,32vw 94vh white,20vw 68vh white,29vw 5vh white,77vw 68vh white,1vw 32vh white,24vw 33vh white,88vw 18vh white,8vw 40vh white,45vw 32vh white,42vw 17vh white,21vw 96vh white,84vw 59vh white,85vw 82vh white,68vw 65vh white,1vw 95vh white,42vw 52vh white,78vw 81vh white,97vw 58vh white,63vw 98vh white,90vw 15vh white,34vw 67vh white,51vw 12vh white,71vw 51vh white,21vw 72vh white,75vw 8vh white,36vw 33vh white,94vw 55vh white,71vw 73vh white,84vw 77vh white,18vw 75vh white,50vw 54vh white,41vw 99vh white,3vw 90vh white,28vw 6vh white,41vw 92vh white,16vw 20vh white,2vw 59vh white,65vw 78vh white,69vw 90vh white,19vw 74vh white,77vw 98vh white,72vw 85vh white,99vw 83vh white,81vw 70vh white,5vw 80vh white,19vw 82vh white,32vw 50vh white,89vw 6vh white,53vw 11vh white,44vw 80vh white,97vw 76vh white,65vw 46vh white,23vw 10vh white,9vw 9vh white,87vw 16vh white,52vw 87vh white,86vw 35vh white,65vw 27vh white,11vw 6vh white,2vw 76vh white,65vw 79vh white,98vw 25vh white,77vw 5vh white,49vw 9vh white,53vw 12vh white,87vw 9vh white,77vw 22vh white,12vw 85vh white,8vw 40vh white,58vw 71vh white,72vw 30vh white,70vw 48vh white,10vw 93vh white,46vw 22vh white,53vw 67vh white,60vw 58vh white,18vw 56vh white,6vw 41vh white,3vw 73vh white,66vw 27vh white,49vw 80vh white,71vw 27vh white,43vw 64vh white,50vw 62vh white,5vw 31vh white,85vw 94vh white,18vw 1vh white,25vw 66vh white,41vw 38vh white,40vw 80vh white,8vw 68vh white,66vw 51vh white,84vw 8vh white,99vw 9vh white,83vw 9vh white,44vw 36vh white,10vw 39vh white,7vw 86vh white,55vw 57vh white,33vw 59vh white,80vw 3vh white,4vw 17vh white,6vw 68vh white,73vw 36vh white,89vw 54vh white,15vw 38vh white,78vw 76vh white,57vw 90vh white,86vw 72vh white,4vw 76vh white,62vw 35vh white,59vw 18vh white,71vw 60vh white,14vw 14vh white,24vw 20vh white,1vw 57vh white,27vw 5vh white,57vw 19vh white,39vw 52vh white,71vw 50vh white,83vw 75vh white,29vw 19vh white,10vw 6vh white,2vw 34vh white,54vw 50vh white,10vw 72vh white,46vw 30vh white,11vw 93vh white,37vw 97vh white,37vw 26vh white,19vw 70vh white,94vw 79vh white,6vw 37vh white,30vw 95vh white,28vw 51vh white,43vw 52vh white,16vw 26vh white,9vw 45vh white,92vw 82vh white,26vw 63vh white,11vw 61vh white,92vw 95vh white,84vw 85vh white,9vw 11vh white,45vw 8vh white,18vw 22vh white,9vw 15vh white,39vw 31vh white,66vw 72vh white,17vw 84vh white,30vw 28vh white,95vw 39vh white,97vw 10vh white,28vw 59vh white,14vw 62vh white,87vw 11vh white,43vw 66vh white,80vw 69vh white,79vw 70vh white,58vw 15vh white,14vw 18vh white,57vw 54vh white,69vw 18vh white,87vw 46vh white,49vw 21vh white,11vw 75vh white,11vw 19vh white,14vw 44vh white,10vw 62vh white,81vw 56vh white,70vw 76vh white,22vw 47vh white,50vw 66vh white,42vw 11vh white,5vw 84vh white,74vw 27vh white,76vw 31vh white,48vw 12vh white,73vw 9vh white,84vw 64vh white,100vw 52vh white,59vw 100vh white,20vw 25vh white,55vw 68vh white,94vw 44vh white,71vw 54vh white,4vw 74vh white;
+  animation: moveUp 100s linear infinite;
+}
+.starrySky2::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: fixed;
+  left: 0;
+  top: 100vh;
+  box-shadow: inherit;
+}
+
+.starrySky3 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 48vw 48vh white,13vw 93vh white,4vw 86vh white,26vw 39vh white,93vw 91vh white,54vw 75vh white,16vw 9vh white,85vw 27vh white,59vw 49vh white,42vw 17vh white,68vw 93vh white,50vw 17vh white,14vw 32vh white,96vw 87vh white,3vw 65vh white,20vw 24vh white,12vw 84vh white,3vw 85vh white,50vw 85vh white,10vw 85vh white,44vw 85vh white,68vw 31vh white,7vw 17vh white,54vw 98vh white,79vw 50vh white,82vw 21vh white,12vw 100vh white,35vw 92vh white,70vw 100vh white,94vw 46vh white,71vw 82vh white,81vw 94vh white,82vw 33vh white,22vw 52vh white,20vw 24vh white,19vw 53vh white,21vw 16vh white,9vw 55vh white,93vw 10vh white,88vw 47vh white,64vw 48vh white,17vw 30vh white,73vw 62vh white,53vw 50vh white,50vw 5vh white,66vw 13vh white,47vw 82vh white,21vw 67vh white,98vw 91vh white,54vw 5vh white,22vw 17vh white,1vw 69vh white,45vw 35vh white,30vw 77vh white,65vw 48vh white,17vw 53vh white,95vw 17vh white,71vw 93vh white,34vw 68vh white,49vw 89vh white,51vw 90vh white,39vw 89vh white,96vw 40vh white,69vw 99vh white,54vw 63vh white,85vw 29vh white,92vw 1vh white,34vw 53vh white,86vw 30vh white,19vw 64vh white,57vw 43vh white,42vw 65vh white,33vw 8vh white,22vw 4vh white,81vw 42vh white,5vw 6vh white,4vw 34vh white,90vw 25vh white,100vw 90vh white,34vw 27vh white,62vw 24vh white,10vw 33vh white,83vw 68vh white,100vw 80vh white,85vw 71vh white,40vw 63vh white,27vw 35vh white,27vw 3vh white,94vw 13vh white,66vw 69vh white,65vw 53vh white,30vw 10vh white,77vw 57vh white,28vw 22vh white,31vw 23vh white,85vw 24vh white,56vw 81vh white,74vw 76vh white,86vw 22vh white,100vw 82vh white,29vw 78vh white,38vw 68vh white,2vw 13vh white,3vw 79vh white,70vw 7vh white,40vw 21vh white,28vw 98vh white,24vw 66vh white,99vw 38vh white,57vw 26vh white,71vw 81vh white,44vw 31vh white,38vw 17vh white,73vw 1vh white,41vw 15vh white,33vw 100vh white,15vw 22vh white,69vw 68vh white,49vw 67vh white,52vw 88vh white,23vw 47vh white,73vw 20vh white,32vw 3vh white,71vw 76vh white,52vw 98vh white;
+  animation: moveUp 50s linear infinite;
+}
+.starrySky3::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: fixed;
+  left: 0;
+  top: 100vh;
+  box-shadow: inherit;
+}
+
+.starrySky4 {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 69vw 51vh white,25vw 7vh white,28vw 49vh white,80vw 7vh white,46vw 59vh white,34vw 93vh white,80vw 14vh white,26vw 74vh white,14vw 5vh white,14vw 9vh white,64vw 74vh white,72vw 99vh white,7vw 15vh white,95vw 46vh white,80vw 92vh white,84vw 12vh white,11vw 15vh white,97vw 24vh white,80vw 66vh white,55vw 77vh white,30vw 67vh white,15vw 48vh white,88vw 21vh white,35vw 92vh white,79vw 53vh white,73vw 53vh white,17vw 30vh white,38vw 87vh white,99vw 52vh white,79vw 6vh white,1vw 80vh white,97vw 67vh white,62vw 89vh white,24vw 21vh white,96vw 69vh white,67vw 2vh white,60vw 83vh white,94vw 91vh white,53vw 79vh white,19vw 15vh white,63vw 56vh white,82vw 21vh white,62vw 54vh white,85vw 30vh white,61vw 96vh white,15vw 4vh white,31vw 47vh white,34vw 46vh white,85vw 25vh white,69vw 6vh white,48vw 97vh white,47vw 44vh white,45vw 95vh white,81vw 48vh white,48vw 12vh white,14vw 20vh white,88vw 3vh white,28vw 12vh white,56vw 13vh white,16vw 70vh white,92vw 68vh white,91vw 25vh white;
+  animation: moveUp 25s linear infinite;
+}
+.starrySky4::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: fixed;
+  left: 0;
+  top: 100vh;
+  box-shadow: inherit;
+}
+
+.starrySky5 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 75vw 94vh white,64vw 81vh white,87vw 17vh white,86vw 9vh white,23vw 9vh white,90vw 18vh white,92vw 68vh white,54vw 33vh white,82vw 39vh white,18vw 17vh white,11vw 81vh white,99vw 95vh white,74vw 86vh white,35vw 43vh white,89vw 36vh white,6vw 54vh white,25vw 59vh white,5vw 92vh white,22vw 35vh white,43vw 97vh white,75vw 80vh white,17vw 73vh white,88vw 57vh white,29vw 74vh white,3vw 20vh white,82vw 77vh white,96vw 76vh white,88vw 20vh white,45vw 89vh white,98vw 31vh white,98vw 96vh white;
+  animation: moveUp 12.5s linear infinite;
+}
+.starrySky5::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: fixed;
+  left: 0;
+  top: 100vh;
+  box-shadow: inherit;
+}/*# sourceMappingURL=test.css.map */

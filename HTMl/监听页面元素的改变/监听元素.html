@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>监听元素 的变化</title>
+</head>
+
+<body>
+    <button onclick="addElement()">添加元素</button>
+    <button onclick="deleteElement()">删除元素</button>
+    <div id="father" style="width: 300px;height: 300px;background-color: red;"></div>
+</body>
+<script>
+
+    let father = document.getElementById('father');
+    function addElement() {
+        father.innerHTML += '<div id="son" style="width: 100px;height: 100px;background-color: blue;">我是子元素</div>';
+    }
+    function deleteElement() {
+        father.removeChild(father.lastChild);
+    }
+
+    //观察器的配置（需要观察什么变动）
+    const config = { childList: true };
+    //回调函数（观察到变动执行的回调函数）
+    const callback = function (mutationList, observer) {
+        console.log(observer);
+        for (let mutation of mutationList) {
+            if (mutation.type === 'childList') {
+                console.log('子元素发生了变化');
+                //停止观察
+                observer.disconnect();
+            }
+        }
+    }
+    //创建一个观察器实例并传入回调函数
+    const observer = new MutationObserver(callback);
+    //开始观察已配置的目标节点
+    observer.observe(father, config);
+</script>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Canvas,使用</title>
+	</head>
+	<body>
+		<div>
+			<canvas id="tutorial" width="300" height="300"></canvas>
+		</div>
+	</body>
+	<script>
+		function draw() {
+			var canvas = document.getElementById("tutorial");
+			if (!canvas.getContext) return;
+			var ctx = canvas.getContext("2d");
+			ctx.beginPath();
+			ctx.moveTo(50, 50);
+			ctx.lineTo(200, 50);
+			ctx.lineTo(200, 200);
+			ctx.closePath(); //虽然我们只绘制了两条线段，但是closePath会closePath，仍然是一个3角形
+			ctx.stroke(); //描边。stroke不会自动closePath()
+            // ctx.fill(); //填充。fill会自动closePath()
+		}
+		draw();
+	</script>
+    <style>
+        #tutorial{
+            border: 1px solid #000;
+        }
+    </style>
+</html>

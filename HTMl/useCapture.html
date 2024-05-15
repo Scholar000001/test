@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>useCapture</title>
+    <style>
+        .one{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .two{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two"></div>
+    </div>
+    <script>
+        const one = document.querySelector('.one');
+        const two = document.querySelector('.two');
+        one.addEventListener('click',function(){
+            console.log('one');
+        },true)//true先于下面的执行
+        two.addEventListener('click',function(){
+            console.log('two');
+        })
+    </script>
+</body>
+</html>

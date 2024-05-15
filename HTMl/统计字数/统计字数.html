@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>统计字数</title>
+	</head>
+	<body>
+		<textarea
+			id="input"
+			type="textarea"
+			placeholder="请输入内容"
+			rows="3"
+		></textarea>
+		<div id="num"></div>
+	</body>
+	<script>
+		const input = document.getElementById("input");
+		const num = document.getElementById("num");
+		input.addEventListener("input", function () {
+			let len = this.value.length;
+			if (len > 100) {
+				this.value = this.value.slice(0, 100);
+				return false;
+			}
+			num.innerHTML = len;
+		});
+	</script>
+</html>

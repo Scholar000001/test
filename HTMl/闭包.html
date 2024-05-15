@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闭包</title>
+</head>
+<body>
+    <button onclick="add1()">添加人员1</button>
+    <button onclick="add2()">添加人员2</button>
+    <div>人员1人数<span id="user1"></span></div>
+    <div>人员2人数<span id="user2"></span></div>
+    <script>
+        function userNum(){
+            let num = 0;
+            return function(){
+                num++;
+                return num;
+            }
+        }
+        let user1 = userNum();
+        let user2 = userNum();
+        function add1(){
+            document.getElementById("user1").innerHTML = user1();
+        }
+        function add2(){
+            document.getElementById("user2").innerHTML = user2();
+        }
+    </script>
+</body>
+</html>

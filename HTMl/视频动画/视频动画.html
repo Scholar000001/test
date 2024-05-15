@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频帧</title>
+</head>
+<body>
+    <video src="./waterproof.mp4"></video>
+    <script>
+        var video = document.querySelector('video');
+        // 这只视频显示第3秒时的帧画面
+        video['currentTime'] = 3;
+    </script>
+</body>
+</html>

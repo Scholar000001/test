@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textarea自动高度</title>
+</head>
+<body>
+    
+    <textarea name="content" id="content" cols="30" rows="10" style="resize:none;overflow-y:hidden;"></textarea>
+
+    <script>
+        var textarea = document.getElementById('content');
+        textarea.addEventListener('input', function(){
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        });
+    </script>
+</body>
+</html>

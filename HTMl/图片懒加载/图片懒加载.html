@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>图片懒加载</title>
+	</head>
+	<body>
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+	</body>
+	<script>
+		function lazyload() {
+			//获取图片列表
+			const imagesList = document.getElementsByTagName("img");
+			var length = imagesList.length; // 一共有多少张图片
+			var n = 0; // n用来保存之前已经加载过的多少张图片，就可减少下面遍历的次数
+			return function () {
+				var clientHeight = document.documentElement.clientHeight; // 浏览器可视区域的高度
+				var scrollTop = document.documentElement.scrollTop; // 页面被遮挡的高度
+				for (let i = n; i < imagesList.length; i++) {
+					if (imagesList[i].offsetTop < clientHeight + scrollTop) {
+						imagesList[i].src = `./img/${i + 1}.jpg`;
+						n++;
+					} else {
+						break;
+					}
+				}
+			};
+		}
+		const init = new lazyload();
+		init();
+		window.addEventListener("scroll", init, false); // 监听页面滚动事件，执行lazyload函数。
+	</script>
+	<style>
+		img {
+			width: 700px;
+			height: 500px;
+            /* 从中间充满盒子 */
+            object-fit: cover;
+		}
+	</style>
+</html>

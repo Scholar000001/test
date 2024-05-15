@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>图片懒加载</title>
+	</head>
+	<body>
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+		<img src="./img/0.jpg" />
+	</body>
+	<script>
+const imgList = document.getElementsByTagName("img");
+//判断图片在列表中是第几个
+function ifImgIndex(dom) {
+    for (let i = 0; i < imgList.length; i++) {
+        if (imgList[i] === dom) {
+            return i;
+        }
+    }
+}
+
+let callback = function (entries) {
+    entries.forEach(item => {
+        if (item.isIntersecting) {
+            let index = ifImgIndex(item.target);
+            item.target.src = `./img/${index + 1}.jpg`;
+        }
+    });
+};
+let options = {
+    root: null, // 默认根节点是视窗
+    rootMargin: "0px", // 根节点的margin
+    threshold: 0.1, // 交叉比例
+};
+var observer = new IntersectionObserver(callback, options);
+for (let i = 0; i < imgList.length; i++) {
+    observer.observe(imgList[i]);
+}
+	</script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		img {
+			width: 700px;
+			height: 500px;
+			/* 从中间充满盒子 */
+			object-fit: cover;
+		}
+	</style>
+</html>

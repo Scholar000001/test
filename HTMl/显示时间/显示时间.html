@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>显示时间</title>
+	</head>
+	<body>
+		<div id="time"></div>
+	</body>
+	<script>
+		const time = document.getElementById("time");
+		//获取当前时间
+		function getTime() {
+			let date = new Date();
+			let year = date.getFullYear();
+			let month = date.getMonth() + 1;
+			let day = date.getDate();
+			let hour = date.getHours();
+			let minute = date.getMinutes();
+			let second = date.getSeconds();
+			let week = date.getDay();
+			let weekArr = ["日", "一", "二", "三", "四", "五", "六"];
+			let str = `${year}年${month}月${day}日${hour}时${minute}分${second}秒 星期${weekArr[week]}`;
+			time.innerHTML = str;
+		}
+		getTime();
+		setInterval(getTime, 1000);
+	</script>
+</html>

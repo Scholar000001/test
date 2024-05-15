@@ -1,0 +1,46 @@
+//random - 生成随机数
+//'#{random(100)vw}'; -- #{}字符串插值拼接
+//unquote - 去掉引号
+@function start($n){
+    $starts:'#{random(100)}vw #{random(100)}vh white';
+    @for $i from 2 through $n {
+      $starts: $starts + ',#{random(100)}vw #{random(100)}vh white';
+    }
+    @return $starts
+  }
+  @keyframes moveUp{
+    to{
+      transform: translateY(-100vh);
+    }
+  }
+  .starrySky{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+  }
+  $duration:400s;
+  $count:1000;
+  @for $i from 1 through 5 {
+    $duration: $duration / 2;
+    $count: floor($count / 2);
+    .starrySky#{$i}{
+      $size:#{$i}px;
+      width:$size;
+      height:$size;
+      border-radius: 50%;
+      position:fixed;
+      left: 0;
+      top: 0;
+      box-shadow: unquote(start($count));
+      animation: moveUp $duration linear infinite;
+      &::after{
+        content: '';
+        width: inherit;
+        height: inherit;
+        position: fixed;
+        left: 0;
+        top:100vh;
+        box-shadow: inherit;
+      }
+    }
+  }
